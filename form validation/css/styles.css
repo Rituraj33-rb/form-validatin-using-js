@@ -1,0 +1,92 @@
+*{
+            box-sizing: border-box;
+        }
+        body{
+        
+            background-color: #8B74FA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+	position:fixed;
+	top: 8px;
+    left: 650px;
+    
+}
+    
+        
+        .container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 550px;
+    max-width: 100%;
+    
+    
+}
+.form{
+    padding: 20px 20px;
+}
+
+
+
+        .fdesign{
+            margin-bottom: 15px;
+	padding-bottom: 15px;
+	position: relative;
+            
+        }
+        
+        .fdesign input{
+            border: 2px solid #dbdbdb;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 5px;
+	width: 100%;
+        }
+        .formerror{
+            color:red;
+        }
+        .but{
+            background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+            width: 100px;
+            height: 30px;
+            margin: 12px 30px;
+            border-radius: 5px;
+            position: fixed;
+            left: 680px;
+            transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+        }
+        .but span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.but span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.but:hover span {
+  padding-right: 25px;
+}
+
+.but:hover span:after {
+  opacity: 1;
+  right: 0;

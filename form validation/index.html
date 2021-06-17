@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="css/styles.css" type="text/css">
+    <title></title>
+    
+</head>
+<body>
+    
+    <h1> Resigstration Form</h1>
+    
+
+    <div class="container">
+    
+         <form action="/myaction.php" name="myForm" onsubmit="return validateform() " method="POST">
+                                      <div class="fdesign" id="name">
+         First Name:<input type="text" name="name"required placeholder="Enter first name" > <span class="formerror"><b> </b></span>
+                                                 </div>
+       
+
+                                      <div class="fdesign" id="lname">
+         Last Name:<input type="text" name="lname"required placeholder="Enter lasat name" > <span  class="formerror"><b> </b></span>
+                                                 </div>
+
+                                     <div class="fdesign" id="email">
+         Email:<input type="email" name="email"required placeholder="Enter email"> <span  class="formerror"><b> </b></span>
+                                                 </div>
+
+                                     <div class="fdesign" id="password">
+        Password:<input type="password" name="password"required placeholder="Enter password eg: A1@bcdaml"> <span  class="formerror"><b> </b></span>
+                                                 </div>
+
+                                     <div class="fdesign" id="cpassword">
+       Conferm Password:<input type="password" name="cpassword"required placeholder="Re-enter the password"> <span  class="formerror"><b> </b></span>
+                                                 </div>
+
+                                     <div class="fdesign" id="phoneno">
+         Phoneno:<input type="phone" name="phoneno"required placeholder=" Enter Phoneno"> <span  class="formerror"><b> </b></span>
+                                                 </div>
+
+                                   <div class="fdesign" id="address" >
+         Address:<input type="text" name="address"required placeholder="Enter address"> <span class="formerror"><b> </b></span>
+                                                 </div>
+
+                                                 <button class="but" type="submit"><span>Submit </span></button>                                           
+
+<!-- <input class="but" type="submit" value="Submit"> -->
+
+
+    </form>
+    </div>
+    <script src="js/validation.js"></script>
+</body>
+
+</html>
